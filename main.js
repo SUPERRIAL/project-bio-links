@@ -1,4 +1,14 @@
 /**
+ * Animasi Text bergerak saat scroll
+ */
+
+document.addEventListener("scroll", (e) => {
+  document.querySelector(".bg-text-animation").style.transform = `translateX(${
+    window.scrollY / 2
+  }px)`;
+});
+
+/**
  * Untuk membuat link bisa dicopy
  */
 const actionLink = document.querySelectorAll(".link-card .link-action");
@@ -29,7 +39,7 @@ actionLink.forEach((action) => {
 
     setTimeout(() => {
       document.querySelector("#toast .toast-container").remove();
-    }, 4000);
+    }, 2000);
   });
 });
 
@@ -55,6 +65,6 @@ document.querySelectorAll(".sosmed i").forEach((sosmed) => {
 
 document.addEventListener("scroll", (e) => {
   document.querySelector(".bg-text-animation").style.transform = `translateX(${
-    window.scrollY / 2
+    window.scrollY / 5
   }px)`;
 });
