@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,31 +15,33 @@ body {
     gap: 1rem;
 }
 
-/* Make background text responsive */
 .bg-text {
     position: absolute;
-    top: 5vw; /* Use vw for responsive positioning */
-    font-size: 8vw; /* Use vw for responsive font size */
+    top: 5rem;
+    font-size: 12rem;
     text-transform: uppercase;
     font-weight: 900;
-    -webkit-text-stroke: 1vw #2d2d56; /* Use vw for stroke width */
+    -webkit-text-stroke: 2px #2d2d56;
     -webkit-text-fill-color: transparent;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: -1;
     user-select: none;
-}
+  }
 
-/* Make image responsive */
 .me-img {
-    width: 30%; /* Use percentage for responsive width */
-    max-width: 13rem; /* Limit maximum width */
+    width: 13rem;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: top;
+    
 }
 
-.text, .text-center {
+.text {
+    text-align: center;
+}
+
+.text-center {
     text-align: center;
 }
 
@@ -49,7 +51,7 @@ a {
 }
 
 .sosmed i {
-    font-size: 5vw; /* Use vw for responsive icon size */
+    font-size: 2rem;
     color: #8787a3;
 }
 
@@ -58,7 +60,7 @@ a {
 }
 
 .sosmed a:not(:last-child) {
-    margin-right: 2vw; /* Use vw for responsive margin */
+    margin-right: 0.9rem;
 }
 
 ul {
@@ -70,70 +72,69 @@ ul li {
     list-style: none;
 }
 
+
 .link-card {
-    width: 90%; /* Use percentage for responsive width */
-    max-width: 30rem; /* Limit maximum width */
+    display: flex;
     background-color: #2D2D56;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw; /* Use vw for responsive padding */
+    padding: 1rem;
     border-radius: 20px;
-    box-shadow: 0.5vw 0.5vw 1vw #0f0f25; /* Use vw for box shadow */
-    border: 2px solid #2D2D56;
+    box-shadow: 8px 11px  #0f0f25;
+    border: 2px solid #2D2D56
 }
 
 .link-card:hover {
-    border-color: white;
+    border: 2px solid white;
 }
 
 .link-icon {
     background-image: linear-gradient(to top, purple, cyan);
-    padding: 1vw; /* Use vw for responsive padding */
-    border-radius: 2vw; /* Use vw for responsive border radius */
+    padding: 0.5rem;
+    border-radius: 10px;
+
 }
 
 .link-icon i {
-    font-size: 5vw; /* Use vw for responsive icon size */
     color: white;
-}
+  }
 
-.link-text, .link-action {
+.link-text {
     text-align: center;
-}
+  }
 
 .link-action {
     color: #8787a3;
     cursor: pointer;
-    padding: 2vw; /* Use vw for responsive padding */
-}
+    padding: 11px;
+  }
 
 .copyright {
-    font-size: 2vw; /* Use vw for responsive font size */
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0.7rem;
     color: #8787a3;
 }
 
 .copyright img {
-    width: 20vw; /* Use vw for responsive image width */
+    width: 8rem;
     opacity: 0.4;
 }
 
 #toast {
-    width: 80vw; /* Use vw for responsive width */
-    max-width: 95vw; /* Limit maximum width */
+    width: max-content;
     position: fixed;
     top: 0;
 }
 
 .toast-container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
+    background-color:  white;
     color: #0f0f25;
-    padding: 4vw; /* Use vw for responsive padding */
-    margin-top: 2vw; /* Use vw for responsive margin */
-    border-radius: 2vw; /* Use vw for responsive border radius */
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
     animation: muncul 300ms ease-in-out;
 }
 
@@ -144,11 +145,11 @@ ul li {
 @keyframes muncul {
     from {
         opacity: 0;
-        transform: translateY(-4vw); /* Use vw for responsive transformation */
+        transform: translateY(-4rem);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translatey(0);
     }
 }
 
@@ -158,63 +159,5 @@ ul li {
     }
     to {
         opacity: 0;
-    }
-}
-
-/* Media queries for responsiveness */
-
-@media (max-width: 768px) {
-    .me-img {
-        width: 40%;
-        max-width: 10rem;
-    }
-
-    .bg-text {
-        font-size: 6rem;
-        top: 10%;
-    }
-
-    .sosmed i {
-        font-size: 3rem;
-    }
-
-    .link-card {
-        width: 95%;
-    }
-
-    .link-action {
-        padding: 1rem;
-    }
-
-    .copyright {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .me-img {
-        width: 60%;
-        max-width: 8rem;
-    }
-
-    .bg-text {
-        font-size: 4rem;
-        top: 15%;
-    }
-
-    .sosmed i {
-        font-size: 2rem;
-    }
-
-    .link-card {
-        width: 100%;
-    }
-
-    .link-action {
-        padding: 0.5rem;
-    }
-
-    .copyright {
-        font-size: 0.8rem;
     }
 }
