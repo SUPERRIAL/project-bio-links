@@ -4,3 +4,5 @@ ini adalah project pertama saya dalam belajar Otodidak menjadi frontend, source 
 saya berharap ini bisa menjadi batu loncatan pertama saya untuk menjadi Web Developer yang hebat dimasa depan
 
 (semangat buat semua junior web dev untuk perbanyak portfolio👊)
+
+https://superrial.github.io/project-bio-links/
